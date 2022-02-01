@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Gestor de tareas</title>
+</head>
+<body>
+    <!-- Encabezado del sitio -->
+    <header>
+        <h1 class="title">Gestor de Tareas</h1>
+    </header>
+
+    <!-- Contenido Principal -->
+    <main>
+        <!-- Estructura del Filtro -->
+        <div id="filter" class="filterSection">
+            <button id="btnFilterOld" class="btnFilter">Realizadas</button>
+            <button id="btnFilterNew" class="btnFilter">Pendientes</button>
+        </div>
+
+        <!-- Lista de Tareas -->
+        <div id="lista" class="contTaks">
+            
+        </div>
+    
+        <!-- Formulario para agregar tareas -->
+        <form class="formAdd" id="form">
+            <input type="text" class="titleTask" id="titleTask" placeholder="Agrege un Titulo" required>
+            <input type="date" name="date" class="dateTask" id="dateTask">
+            <button type="submit" class="btnAddTask" id="btnAddTask">Agregar Tarea</button>
+        </form>
+    </main>
+
+    <!-- JavaScript -->
+    <script src="./index.js"></script>
+</body>
+</html>
